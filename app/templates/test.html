@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Test Page</title>
+</head>
+<body>
+  <h1>Test Page</h1>
+  <p>{{ data.message }}</p>
+
+  {% for a in range(100) %}
+    {% if a % 15 == 0 %}
+        <p>FizzBuzz</p>
+    {% elif a % 5 == 0 %}
+        <p>Buzz</p>
+    {% elif a % 3 == 0 %}
+        <p>Fixx</p>
+    {% else %}
+        <p>{{ a }}</p>
+    {% endif %}
+  {% endfor %}
+</body>
+</html>
